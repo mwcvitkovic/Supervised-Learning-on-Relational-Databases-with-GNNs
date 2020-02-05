@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*.o
+*.swp
+.ipynb_checkpoints/
+.idea/
+data/raw_data
+.hypothesis/
+runs/
+saved_runs/

@@ -1,0 +1,493 @@
+{
+  "name": "homecreditdefaultrisk_main_table",
+  "task": {
+    "type": "binary classification"
+  },
+  "n_datapoints": 307511,
+  "columns": [
+    {
+      "name": "TARGET",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "AMT_ANNUITY",
+      "type": "SCALAR"
+    },
+    {
+      "name": "AMT_CREDIT",
+      "type": "SCALAR"
+    },
+    {
+      "name": "AMT_GOODS_PRICE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "AMT_INCOME_TOTAL",
+      "type": "SCALAR"
+    },
+    {
+      "name": "AMT_REQ_CREDIT_BUREAU_DAY",
+      "type": "SCALAR"
+    },
+    {
+      "name": "AMT_REQ_CREDIT_BUREAU_HOUR",
+      "type": "SCALAR"
+    },
+    {
+      "name": "AMT_REQ_CREDIT_BUREAU_MON",
+      "type": "SCALAR"
+    },
+    {
+      "name": "AMT_REQ_CREDIT_BUREAU_QRT",
+      "type": "SCALAR"
+    },
+    {
+      "name": "AMT_REQ_CREDIT_BUREAU_WEEK",
+      "type": "SCALAR"
+    },
+    {
+      "name": "AMT_REQ_CREDIT_BUREAU_YEAR",
+      "type": "SCALAR"
+    },
+    {
+      "name": "APARTMENTS_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "APARTMENTS_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "APARTMENTS_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "BASEMENTAREA_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "BASEMENTAREA_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "BASEMENTAREA_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "CNT_CHILDREN",
+      "type": "SCALAR"
+    },
+    {
+      "name": "CNT_FAM_MEMBERS",
+      "type": "SCALAR"
+    },
+    {
+      "name": "CODE_GENDER",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "COMMONAREA_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "COMMONAREA_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "COMMONAREA_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "DAYS_BIRTH",
+      "type": "SCALAR"
+    },
+    {
+      "name": "DAYS_EMPLOYED",
+      "type": "SCALAR"
+    },
+    {
+      "name": "DAYS_ID_PUBLISH",
+      "type": "SCALAR"
+    },
+    {
+      "name": "DAYS_LAST_PHONE_CHANGE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "DAYS_REGISTRATION",
+      "type": "SCALAR"
+    },
+    {
+      "name": "DEF_30_CNT_SOCIAL_CIRCLE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "DEF_60_CNT_SOCIAL_CIRCLE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "ELEVATORS_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "ELEVATORS_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "ELEVATORS_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "EMERGENCYSTATE_MODE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "ENTRANCES_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "ENTRANCES_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "ENTRANCES_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "EXT_SOURCE_1",
+      "type": "SCALAR"
+    },
+    {
+      "name": "EXT_SOURCE_2",
+      "type": "SCALAR"
+    },
+    {
+      "name": "EXT_SOURCE_3",
+      "type": "SCALAR"
+    },
+    {
+      "name": "FLAG_CONT_MOBILE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_10",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_11",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_12",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_13",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_14",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_15",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_16",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_17",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_18",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_19",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_2",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_20",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_21",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_3",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_4",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_5",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_6",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_7",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_8",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_9",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_EMAIL",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_EMP_PHONE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_MOBIL",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_OWN_CAR",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_OWN_REALTY",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_PHONE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_WORK_PHONE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLOORSMAX_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "FLOORSMAX_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "FLOORSMAX_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "FLOORSMIN_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "FLOORSMIN_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "FLOORSMIN_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "FONDKAPREMONT_MODE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "HOUR_APPR_PROCESS_START",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "HOUSETYPE_MODE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "LANDAREA_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LANDAREA_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LANDAREA_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LIVE_CITY_NOT_WORK_CITY",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "LIVE_REGION_NOT_WORK_REGION",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "LIVINGAPARTMENTS_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LIVINGAPARTMENTS_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LIVINGAPARTMENTS_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LIVINGAREA_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LIVINGAREA_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LIVINGAREA_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NAME_CONTRACT_TYPE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "NAME_EDUCATION_TYPE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "NAME_FAMILY_STATUS",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "NAME_HOUSING_TYPE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "NAME_INCOME_TYPE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "NAME_TYPE_SUITE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "NONLIVINGAPARTMENTS_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NONLIVINGAPARTMENTS_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NONLIVINGAPARTMENTS_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NONLIVINGAREA_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NONLIVINGAREA_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NONLIVINGAREA_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "OBS_30_CNT_SOCIAL_CIRCLE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "OBS_60_CNT_SOCIAL_CIRCLE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "OCCUPATION_TYPE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "ORGANIZATION_TYPE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "OWN_CAR_AGE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "REGION_POPULATION_RELATIVE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "REGION_RATING_CLIENT",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "REGION_RATING_CLIENT_W_CITY",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "REG_CITY_NOT_LIVE_CITY",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "REG_CITY_NOT_WORK_CITY",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "REG_REGION_NOT_LIVE_REGION",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "REG_REGION_NOT_WORK_REGION",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "TOTALAREA_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "WALLSMATERIAL_MODE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "WEEKDAY_APPR_PROCESS_START",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "YEARS_BEGINEXPLUATATION_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "YEARS_BEGINEXPLUATATION_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "YEARS_BEGINEXPLUATATION_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "YEARS_BUILD_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "YEARS_BUILD_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "YEARS_BUILD_MODE",
+      "type": "SCALAR"
+    }
+  ]
+}

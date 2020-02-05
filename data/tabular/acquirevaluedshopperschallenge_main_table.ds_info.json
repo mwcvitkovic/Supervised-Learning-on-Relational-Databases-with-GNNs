@@ -1,0 +1,29 @@
+{
+  "name": "acquirevaluedshopperschallenge_main_table",
+  "task": {
+    "type": "binary classification"
+  },
+  "n_datapoints": 160057,
+  "columns": [
+    {
+      "name": "TARGET",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "chain",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "offer",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "market",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "offerdate",
+      "type": "DATETIME"
+    }
+  ]
+}

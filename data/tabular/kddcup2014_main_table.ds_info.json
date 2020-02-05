@@ -1,0 +1,141 @@
+{
+  "name": "kddcup2014_main_table",
+  "task": {
+    "type": "binary classification"
+  },
+  "n_datapoints": 619326,
+  "columns": [
+    {
+      "name": "TARGET",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "teacher_acctid",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "schoolid",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_ncesid",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_city",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_state",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_zip",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_metro",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_district",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_county",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_charter",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_magnet",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_year_round",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_nlns",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_kipp",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_charter_ready_promise",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "teacher_prefix",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "teacher_teach_for_america",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "teacher_ny_teaching_fellow",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "primary_focus_subject",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "primary_focus_area",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "secondary_focus_subject",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "secondary_focus_area",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "poverty_level",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "grade_level",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "fulfillment_labor_materials",
+      "type": "SCALAR"
+    },
+    {
+      "name": "total_price_excluding_optional_support",
+      "type": "SCALAR"
+    },
+    {
+      "name": "total_price_including_optional_support",
+      "type": "SCALAR"
+    },
+    {
+      "name": "students_reached",
+      "type": "SCALAR"
+    },
+    {
+      "name": "eligible_double_your_impact_match",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "eligible_almost_home_match",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "date_posted",
+      "type": "DATETIME"
+    },
+    {
+      "name": "school_latlong",
+      "type": "LATLONG"
+    }
+  ]
+}

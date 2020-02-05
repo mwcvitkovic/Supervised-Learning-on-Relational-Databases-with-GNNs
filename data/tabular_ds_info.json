@@ -1,0 +1,102 @@
+{
+  "acquirevaluedshopperschallenge_main_table": {
+    "processed": {
+      "bucket": null,
+      "format": ".csv",
+      "local_path": "tabular/acquirevaluedshopperschallenge_main_table/acquirevaluedshopperschallenge_main_table.csv.gz",
+      "preprocessor": "data/acquirevaluedshopperschallenge/build_tabular_datasets.py",
+      "ds_info": "data/tabular/acquirevaluedshopperschallenge_main_table.ds_info.json",
+      "task": "binary classification"
+    }
+  },
+  "acquirevaluedshopperschallenge_dfs_smaller": {
+    "processed": {
+      "bucket": null,
+      "format": ".csv",
+      "local_path": "tabular/acquirevaluedshopperschallenge_dfs_smaller/acquirevaluedshopperschallenge_dfs_smaller.csv.gz",
+      "preprocessor": null,
+      "ds_info": "data/tabular/acquirevaluedshopperschallenge_dfs_smaller.ds_info.json",
+      "task": "binary classification"
+    }
+  },
+  "acquirevaluedshopperschallenge_dfs_larger": {
+    "processed": {
+      "bucket": null,
+      "format": ".csv",
+      "local_path": "tabular/acquirevaluedshopperschallenge_dfs_larger/acquirevaluedshopperschallenge_dfs_larger.csv.gz",
+      "preprocessor": null,
+      "ds_info": "data/tabular/acquirevaluedshopperschallenge_dfs_larger.ds_info.json",
+      "task": "binary classification"
+    }
+  },
+  "homecreditdefaultrisk_main_table": {
+    "processed": {
+      "bucket": null,
+      "format": ".csv",
+      "local_path": "tabular/homecreditdefaultrisk_main_table/homecreditdefaultrisk_main_table.csv.gz",
+      "preprocessor": "data/homecreditdefaultrisk/build_tabular_datasets.py",
+      "ds_info": "data/tabular/homecreditdefaultrisk_main_table.ds_info.json",
+      "task": "binary classification"
+    }
+  },
+  "homecreditdefaultrisk_dfs_smaller": {
+    "processed": {
+      "bucket": null,
+      "format": ".csv",
+      "local_path": "tabular/homecreditdefaultrisk_dfs_smaller/homecreditdefaultrisk_dfs_smaller.csv.gz",
+      "preprocessor": null,
+      "ds_info": "data/tabular/homecreditdefaultrisk_dfs_smaller.ds_info.json",
+      "task": "binary classification"
+    }
+  },
+  "homecreditdefaultrisk_dfs_larger": {
+    "processed": {
+      "bucket": null,
+      "format": ".csv",
+      "local_path": "tabular/homecreditdefaultrisk_dfs_larger/homecreditdefaultrisk_dfs_larger.csv",
+      "preprocessor": null,
+      "ds_info": "data/tabular/homecreditdefaultrisk_dfs_larger.ds_info.json",
+      "task": "binary classification"
+    }
+  },
+  "kddcup2014_main_table": {
+    "processed": {
+      "bucket": null,
+      "format": ".csv",
+      "local_path": "tabular/kddcup2014_main_table/kddcup2014_main_table.csv",
+      "preprocessor": "data/kddcup2014/build_tabular_datasets.py",
+      "ds_info": "data/tabular/kddcup2014_main_table.ds_info.json",
+      "task": "binary classification"
+    }
+  },
+  "kddcup2014_main_table_and_essays": {
+    "processed": {
+      "bucket": null,
+      "format": ".csv",
+      "local_path": "tabular/kddcup2014_main_table_and_essays/kddcup2014_main_table_and_essays.csv",
+      "preprocessor": "data/kddcup2014/build_tabular_datasets.py",
+      "ds_info": "data/tabular/kddcup2014_main_table_and_essays.ds_info.json",
+      "task": "binary classification"
+    }
+  },
+  "kddcup2014_dfs_smaller": {
+    "processed": {
+      "bucket": null,
+      "format": ".csv",
+      "local_path": "tabular/kddcup2014_dfs_smaller/kddcup2014_dfs_smaller.csv",
+      "preprocessor": null,
+      "ds_info": "data/tabular/kddcup2014_dfs_smaller.ds_info.json",
+      "task": "binary classification"
+    }
+  },
+  "kddcup2014_dfs_larger": {
+    "processed": {
+      "bucket": null,
+      "format": ".csv",
+      "local_path": "tabular/kddcup2014_dfs_larger/kddcup2014_dfs_larger.csv",
+      "preprocessor": null,
+      "ds_info": "data/tabular/kddcup2014_dfs_larger.ds_info.json",
+      "task": "binary classification"
+    }
+  }
+}

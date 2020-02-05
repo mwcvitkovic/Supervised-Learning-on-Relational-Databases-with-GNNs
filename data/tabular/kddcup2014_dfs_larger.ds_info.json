@@ -1,0 +1,697 @@
+{
+  "name": "kddcup2014_dfs_larger",
+  "task": {
+    "type": "binary classification"
+  },
+  "n_datapoints": 619326,
+  "columns": [
+    {
+      "name": "TARGET",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "schoolid",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_ncesid",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_city",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_state",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_zip",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_metro",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_district",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_county",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_charter",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_magnet",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_year_round",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_nlns",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_kipp",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "school_charter_ready_promise",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "teacher_prefix",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "teacher_teach_for_america",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "teacher_ny_teaching_fellow",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "primary_focus_subject",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "primary_focus_area",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "secondary_focus_subject",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "secondary_focus_area",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "poverty_level",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "grade_level",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "fulfillment_labor_materials",
+      "type": "SCALAR"
+    },
+    {
+      "name": "total_price_excluding_optional_support",
+      "type": "SCALAR"
+    },
+    {
+      "name": "total_price_including_optional_support",
+      "type": "SCALAR"
+    },
+    {
+      "name": "students_reached",
+      "type": "SCALAR"
+    },
+    {
+      "name": "eligible_double_your_impact_match",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "eligible_almost_home_match",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "resource_type",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "LAST(essay_essayid)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "COUNT(essay)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEDIAN(resource_item_unit_price)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEDIAN(resource_item_quantity)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MODE(resource_vendor_name)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(resource_vendorid)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(resource_project_resource_type)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MEAN(resource_item_unit_price)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(resource_item_quantity)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(resource_item_unit_price)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(resource_item_quantity)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LAST(resource_resourceid)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "LAST(resource_vendor_name)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "LAST(resource_item_unit_price)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LAST(resource_item_quantity)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LAST(resource_vendorid)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "LAST(resource_project_resource_type)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "COUNT(resource)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(resource_vendor_name)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(resource_vendorid)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(resource_project_resource_type)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(resource_item_unit_price)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(resource_item_quantity)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(resource_item_unit_price)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(resource_item_quantity)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(resource_item_unit_price)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(resource_item_quantity)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(resource_item_unit_price)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(resource_item_quantity)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "DAY(date_posted)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "YEAR(date_posted)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MONTH(date_posted)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "WEEKDAY(date_posted)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MEDIAN(essay_NUM_WORDS(title))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEDIAN(essay_NUM_WORDS(short_description))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEDIAN(essay_NUM_WORDS(need_statement))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEDIAN(essay_NUM_WORDS(essay))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEDIAN(essay_NUM_CHARACTERS(title))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEDIAN(essay_NUM_CHARACTERS(short_description))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEDIAN(essay_NUM_CHARACTERS(need_statement))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEDIAN(essay_NUM_CHARACTERS(essay))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(essay_NUM_WORDS(title))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(essay_NUM_WORDS(short_description))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(essay_NUM_WORDS(need_statement))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(essay_NUM_WORDS(essay))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(essay_NUM_CHARACTERS(title))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(essay_NUM_CHARACTERS(short_description))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(essay_NUM_CHARACTERS(need_statement))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(essay_NUM_CHARACTERS(essay))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(essay_NUM_WORDS(title))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(essay_NUM_WORDS(short_description))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(essay_NUM_WORDS(need_statement))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(essay_NUM_WORDS(essay))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(essay_NUM_CHARACTERS(title))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(essay_NUM_CHARACTERS(short_description))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(essay_NUM_CHARACTERS(need_statement))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(essay_NUM_CHARACTERS(essay))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LAST(essay_NUM_WORDS(title))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LAST(essay_NUM_WORDS(short_description))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LAST(essay_NUM_WORDS(need_statement))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LAST(essay_NUM_WORDS(essay))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LAST(essay_NUM_CHARACTERS(title))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LAST(essay_NUM_CHARACTERS(short_description))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LAST(essay_NUM_CHARACTERS(need_statement))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LAST(essay_NUM_CHARACTERS(essay))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(essay_NUM_WORDS(title))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(essay_NUM_WORDS(short_description))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(essay_NUM_WORDS(need_statement))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(essay_NUM_WORDS(essay))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(essay_NUM_CHARACTERS(title))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(essay_NUM_CHARACTERS(short_description))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(essay_NUM_CHARACTERS(need_statement))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(essay_NUM_CHARACTERS(essay))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(essay_NUM_WORDS(title))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(essay_NUM_WORDS(short_description))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(essay_NUM_WORDS(need_statement))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(essay_NUM_WORDS(essay))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(essay_NUM_CHARACTERS(title))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(essay_NUM_CHARACTERS(short_description))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(essay_NUM_CHARACTERS(need_statement))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(essay_NUM_CHARACTERS(essay))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(essay_NUM_WORDS(title))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(essay_NUM_WORDS(short_description))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(essay_NUM_WORDS(need_statement))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(essay_NUM_WORDS(essay))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(essay_NUM_CHARACTERS(title))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(essay_NUM_CHARACTERS(short_description))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(essay_NUM_CHARACTERS(need_statement))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(essay_NUM_CHARACTERS(essay))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(essay_NUM_WORDS(title))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(essay_NUM_WORDS(short_description))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(essay_NUM_WORDS(need_statement))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(essay_NUM_WORDS(essay))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(essay_NUM_CHARACTERS(title))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(essay_NUM_CHARACTERS(short_description))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(essay_NUM_CHARACTERS(need_statement))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(essay_NUM_CHARACTERS(essay))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEDIAN(resource_NUM_WORDS(item_name))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEDIAN(resource_NUM_WORDS(item_number))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEDIAN(resource_NUM_CHARACTERS(item_name))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEDIAN(resource_NUM_CHARACTERS(item_number))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(resource_NUM_WORDS(item_name))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(resource_NUM_WORDS(item_number))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(resource_NUM_CHARACTERS(item_name))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(resource_NUM_CHARACTERS(item_number))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(resource_NUM_WORDS(item_name))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(resource_NUM_WORDS(item_number))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(resource_NUM_CHARACTERS(item_name))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(resource_NUM_CHARACTERS(item_number))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LAST(resource_NUM_WORDS(item_name))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LAST(resource_NUM_WORDS(item_number))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LAST(resource_NUM_CHARACTERS(item_name))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LAST(resource_NUM_CHARACTERS(item_number))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(resource_NUM_WORDS(item_name))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(resource_NUM_WORDS(item_number))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(resource_NUM_CHARACTERS(item_name))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(resource_NUM_CHARACTERS(item_number))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(resource_NUM_WORDS(item_name))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(resource_NUM_WORDS(item_number))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(resource_NUM_CHARACTERS(item_name))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(resource_NUM_CHARACTERS(item_number))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(resource_NUM_WORDS(item_name))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(resource_NUM_WORDS(item_number))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(resource_NUM_CHARACTERS(item_name))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(resource_NUM_CHARACTERS(item_number))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(resource_NUM_WORDS(item_name))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(resource_NUM_WORDS(item_number))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(resource_NUM_CHARACTERS(item_name))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(resource_NUM_CHARACTERS(item_number))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_WORDS(LAST(essay_title))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_WORDS(LAST(essay_short_description))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_WORDS(LAST(essay_need_statement))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_WORDS(LAST(essay_essay))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_WORDS(LAST(resource_item_name))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_WORDS(LAST(resource_item_number))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_CHARACTERS(LAST(essay_title))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_CHARACTERS(LAST(essay_short_description))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_CHARACTERS(LAST(essay_need_statement))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_CHARACTERS(LAST(essay_essay))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_CHARACTERS(LAST(resource_item_name))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_CHARACTERS(LAST(resource_item_number))",
+      "type": "SCALAR"
+    }
+  ]
+}

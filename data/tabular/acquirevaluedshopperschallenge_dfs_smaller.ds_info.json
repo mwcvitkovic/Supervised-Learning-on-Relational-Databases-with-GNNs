@@ -1,0 +1,217 @@
+{
+  "name": "acquirevaluedshopperschallenge_dfs_smaller",
+  "task": {
+    "type": "binary classification"
+  },
+  "n_datapoints": 160057,
+  "columns": [
+    {
+      "name": "TARGET",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "chain",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "market",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "offer",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "category",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "quantity",
+      "type": "SCALAR"
+    },
+    {
+      "name": "company",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "offervalue",
+      "type": "SCALAR"
+    },
+    {
+      "name": "brand",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "SUM(transactions_productsize)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(transactions_purchasequantity)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(transactions_purchaseamount)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(transactions_productsize)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(transactions_purchasequantity)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(transactions_purchaseamount)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(transactions_productsize)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(transactions_purchasequantity)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(transactions_purchaseamount)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(transactions_productsize)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(transactions_purchasequantity)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(transactions_purchaseamount)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(transactions_productsize)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(transactions_purchasequantity)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(transactions_purchaseamount)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(transactions_productsize)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(transactions_purchasequantity)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(transactions_purchaseamount)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "COUNT(transactions)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(transactions_chain)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(transactions_dept)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(transactions_category)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(transactions_company)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(transactions_brand)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(transactions_productmeasure)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MODE(transactions_chain)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(transactions_dept)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(transactions_category)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(transactions_company)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(transactions_brand)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(transactions_productmeasure)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "DAY(offerdate)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "YEAR(offerdate)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MONTH(offerdate)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "WEEKDAY(offerdate)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "NUM_UNIQUE(transactions_DAY(date))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(transactions_YEAR(date))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(transactions_MONTH(date))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(transactions_WEEKDAY(date))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MODE(transactions_DAY(date))",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(transactions_YEAR(date))",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(transactions_MONTH(date))",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(transactions_WEEKDAY(date))",
+      "type": "CATEGORICAL"
+    }
+  ]
+}

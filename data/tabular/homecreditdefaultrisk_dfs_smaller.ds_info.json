@@ -1,0 +1,6637 @@
+{
+  "name": "homecreditdefaultrisk_dfs_smaller",
+  "task": {
+    "type": "binary classification"
+  },
+  "n_datapoints": 307511,
+  "columns": [
+    {
+      "name": "TARGET",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "AMT_ANNUITY",
+      "type": "SCALAR"
+    },
+    {
+      "name": "AMT_CREDIT",
+      "type": "SCALAR"
+    },
+    {
+      "name": "AMT_GOODS_PRICE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "AMT_INCOME_TOTAL",
+      "type": "SCALAR"
+    },
+    {
+      "name": "AMT_REQ_CREDIT_BUREAU_DAY",
+      "type": "SCALAR"
+    },
+    {
+      "name": "AMT_REQ_CREDIT_BUREAU_HOUR",
+      "type": "SCALAR"
+    },
+    {
+      "name": "AMT_REQ_CREDIT_BUREAU_MON",
+      "type": "SCALAR"
+    },
+    {
+      "name": "AMT_REQ_CREDIT_BUREAU_QRT",
+      "type": "SCALAR"
+    },
+    {
+      "name": "AMT_REQ_CREDIT_BUREAU_WEEK",
+      "type": "SCALAR"
+    },
+    {
+      "name": "AMT_REQ_CREDIT_BUREAU_YEAR",
+      "type": "SCALAR"
+    },
+    {
+      "name": "APARTMENTS_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "APARTMENTS_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "APARTMENTS_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "BASEMENTAREA_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "BASEMENTAREA_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "BASEMENTAREA_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "CNT_CHILDREN",
+      "type": "SCALAR"
+    },
+    {
+      "name": "CNT_FAM_MEMBERS",
+      "type": "SCALAR"
+    },
+    {
+      "name": "CODE_GENDER",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "COMMONAREA_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "COMMONAREA_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "COMMONAREA_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "DAYS_BIRTH",
+      "type": "SCALAR"
+    },
+    {
+      "name": "DAYS_EMPLOYED",
+      "type": "SCALAR"
+    },
+    {
+      "name": "DAYS_ID_PUBLISH",
+      "type": "SCALAR"
+    },
+    {
+      "name": "DAYS_LAST_PHONE_CHANGE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "DAYS_REGISTRATION",
+      "type": "SCALAR"
+    },
+    {
+      "name": "DEF_30_CNT_SOCIAL_CIRCLE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "DEF_60_CNT_SOCIAL_CIRCLE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "ELEVATORS_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "ELEVATORS_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "ELEVATORS_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "EMERGENCYSTATE_MODE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "ENTRANCES_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "ENTRANCES_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "ENTRANCES_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "EXT_SOURCE_1",
+      "type": "SCALAR"
+    },
+    {
+      "name": "EXT_SOURCE_2",
+      "type": "SCALAR"
+    },
+    {
+      "name": "EXT_SOURCE_3",
+      "type": "SCALAR"
+    },
+    {
+      "name": "FLAG_CONT_MOBILE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_10",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_11",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_12",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_13",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_14",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_15",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_16",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_17",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_18",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_19",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_2",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_20",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_21",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_3",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_4",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_5",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_6",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_7",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_8",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_DOCUMENT_9",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_EMAIL",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_EMP_PHONE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_MOBIL",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_OWN_CAR",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_OWN_REALTY",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_PHONE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLAG_WORK_PHONE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "FLOORSMAX_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "FLOORSMAX_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "FLOORSMAX_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "FLOORSMIN_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "FLOORSMIN_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "FLOORSMIN_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "FONDKAPREMONT_MODE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "HOUR_APPR_PROCESS_START",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "HOUSETYPE_MODE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "LANDAREA_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LANDAREA_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LANDAREA_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LIVE_CITY_NOT_WORK_CITY",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "LIVE_REGION_NOT_WORK_REGION",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "LIVINGAPARTMENTS_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LIVINGAPARTMENTS_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LIVINGAPARTMENTS_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LIVINGAREA_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LIVINGAREA_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "LIVINGAREA_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NAME_CONTRACT_TYPE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "NAME_EDUCATION_TYPE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "NAME_FAMILY_STATUS",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "NAME_HOUSING_TYPE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "NAME_INCOME_TYPE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "NAME_TYPE_SUITE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "NONLIVINGAPARTMENTS_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NONLIVINGAPARTMENTS_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NONLIVINGAPARTMENTS_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NONLIVINGAREA_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NONLIVINGAREA_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NONLIVINGAREA_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "OBS_30_CNT_SOCIAL_CIRCLE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "OBS_60_CNT_SOCIAL_CIRCLE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "OCCUPATION_TYPE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "ORGANIZATION_TYPE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "OWN_CAR_AGE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "REGION_POPULATION_RELATIVE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "REGION_RATING_CLIENT",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "REGION_RATING_CLIENT_W_CITY",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "REG_CITY_NOT_LIVE_CITY",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "REG_CITY_NOT_WORK_CITY",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "REG_REGION_NOT_LIVE_REGION",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "REG_REGION_NOT_WORK_REGION",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "TOTALAREA_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "WALLSMATERIAL_MODE",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "WEEKDAY_APPR_PROCESS_START",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "YEARS_BEGINEXPLUATATION_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "YEARS_BEGINEXPLUATATION_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "YEARS_BEGINEXPLUATATION_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "YEARS_BUILD_AVG",
+      "type": "SCALAR"
+    },
+    {
+      "name": "YEARS_BUILD_MEDI",
+      "type": "SCALAR"
+    },
+    {
+      "name": "YEARS_BUILD_MODE",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(bureau_DAYS_CREDIT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(bureau_CREDIT_DAY_OVERDUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(bureau_DAYS_CREDIT_ENDDATE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(bureau_DAYS_ENDDATE_FACT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(bureau_AMT_CREDIT_MAX_OVERDUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(bureau_CNT_CREDIT_PROLONG)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(bureau_AMT_CREDIT_SUM)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(bureau_AMT_CREDIT_SUM_DEBT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(bureau_AMT_CREDIT_SUM_LIMIT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(bureau_AMT_CREDIT_SUM_OVERDUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(bureau_DAYS_CREDIT_UPDATE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(bureau_AMT_ANNUITY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(bureau_DAYS_CREDIT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(bureau_CREDIT_DAY_OVERDUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(bureau_DAYS_CREDIT_ENDDATE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(bureau_DAYS_ENDDATE_FACT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(bureau_AMT_CREDIT_MAX_OVERDUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(bureau_CNT_CREDIT_PROLONG)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(bureau_AMT_CREDIT_SUM)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(bureau_AMT_CREDIT_SUM_DEBT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(bureau_AMT_CREDIT_SUM_LIMIT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(bureau_AMT_CREDIT_SUM_OVERDUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(bureau_DAYS_CREDIT_UPDATE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(bureau_AMT_ANNUITY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(bureau_DAYS_CREDIT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(bureau_CREDIT_DAY_OVERDUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(bureau_DAYS_CREDIT_ENDDATE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(bureau_DAYS_ENDDATE_FACT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(bureau_AMT_CREDIT_MAX_OVERDUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(bureau_CNT_CREDIT_PROLONG)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(bureau_AMT_CREDIT_SUM)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(bureau_AMT_CREDIT_SUM_DEBT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(bureau_AMT_CREDIT_SUM_LIMIT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(bureau_AMT_CREDIT_SUM_OVERDUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(bureau_DAYS_CREDIT_UPDATE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(bureau_AMT_ANNUITY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(bureau_DAYS_CREDIT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(bureau_CREDIT_DAY_OVERDUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(bureau_DAYS_CREDIT_ENDDATE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(bureau_DAYS_ENDDATE_FACT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(bureau_AMT_CREDIT_MAX_OVERDUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(bureau_CNT_CREDIT_PROLONG)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(bureau_AMT_CREDIT_SUM)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(bureau_AMT_CREDIT_SUM_DEBT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(bureau_AMT_CREDIT_SUM_LIMIT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(bureau_AMT_CREDIT_SUM_OVERDUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(bureau_DAYS_CREDIT_UPDATE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(bureau_AMT_ANNUITY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(bureau_DAYS_CREDIT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(bureau_CREDIT_DAY_OVERDUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(bureau_DAYS_CREDIT_ENDDATE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(bureau_DAYS_ENDDATE_FACT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(bureau_AMT_CREDIT_MAX_OVERDUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(bureau_CNT_CREDIT_PROLONG)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(bureau_AMT_CREDIT_SUM)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(bureau_AMT_CREDIT_SUM_DEBT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(bureau_AMT_CREDIT_SUM_LIMIT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(bureau_AMT_CREDIT_SUM_OVERDUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(bureau_DAYS_CREDIT_UPDATE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(bureau_AMT_ANNUITY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_DAYS_CREDIT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_CREDIT_DAY_OVERDUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_DAYS_CREDIT_ENDDATE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_DAYS_ENDDATE_FACT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_AMT_CREDIT_MAX_OVERDUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_CNT_CREDIT_PROLONG)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_AMT_CREDIT_SUM)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_AMT_CREDIT_SUM_DEBT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_AMT_CREDIT_SUM_LIMIT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_AMT_CREDIT_SUM_OVERDUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_DAYS_CREDIT_UPDATE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_AMT_ANNUITY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "COUNT(bureau)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(bureau_CREDIT_ACTIVE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(bureau_CREDIT_CURRENCY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(bureau_CREDIT_TYPE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MODE(bureau_CREDIT_ACTIVE)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(bureau_CREDIT_CURRENCY)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(bureau_CREDIT_TYPE)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "SUM(bureau_balance_MONTHS_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(bureau_balance_MONTHS_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(bureau_balance_MONTHS_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(bureau_balance_MONTHS_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(bureau_balance_MONTHS_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_balance_MONTHS_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "COUNT(bureau_balance)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(bureau_balance_STATUS)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MODE(bureau_balance_STATUS)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "SUM(previous_AMT_ANNUITY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_AMT_APPLICATION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_AMT_CREDIT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_AMT_DOWN_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_AMT_GOODS_PRICE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_RATE_DOWN_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_RATE_INTEREST_PRIMARY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_RATE_INTEREST_PRIVILEGED)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_DAYS_DECISION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SELLERPLACE_AREA)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_CNT_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_DAYS_FIRST_DRAWING)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_DAYS_FIRST_DUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_DAYS_LAST_DUE_1ST_VERSION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_DAYS_LAST_DUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_DAYS_TERMINATION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_AMT_ANNUITY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_AMT_APPLICATION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_AMT_CREDIT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_AMT_DOWN_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_AMT_GOODS_PRICE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_RATE_DOWN_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_RATE_INTEREST_PRIMARY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_RATE_INTEREST_PRIVILEGED)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_DAYS_DECISION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SELLERPLACE_AREA)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_CNT_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_DAYS_FIRST_DRAWING)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_DAYS_FIRST_DUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_DAYS_LAST_DUE_1ST_VERSION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_DAYS_LAST_DUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_DAYS_TERMINATION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_AMT_ANNUITY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_AMT_APPLICATION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_AMT_CREDIT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_AMT_DOWN_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_AMT_GOODS_PRICE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_RATE_DOWN_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_RATE_INTEREST_PRIMARY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_RATE_INTEREST_PRIVILEGED)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_DAYS_DECISION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SELLERPLACE_AREA)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_CNT_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_DAYS_FIRST_DRAWING)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_DAYS_FIRST_DUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_DAYS_LAST_DUE_1ST_VERSION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_DAYS_LAST_DUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_DAYS_TERMINATION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_AMT_ANNUITY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_AMT_APPLICATION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_AMT_CREDIT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_AMT_DOWN_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_AMT_GOODS_PRICE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_RATE_DOWN_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_RATE_INTEREST_PRIMARY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_RATE_INTEREST_PRIVILEGED)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_DAYS_DECISION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SELLERPLACE_AREA)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_CNT_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_DAYS_FIRST_DRAWING)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_DAYS_FIRST_DUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_DAYS_LAST_DUE_1ST_VERSION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_DAYS_LAST_DUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_DAYS_TERMINATION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_AMT_ANNUITY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_AMT_APPLICATION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_AMT_CREDIT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_AMT_DOWN_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_AMT_GOODS_PRICE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_RATE_DOWN_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_RATE_INTEREST_PRIMARY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_RATE_INTEREST_PRIVILEGED)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_DAYS_DECISION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SELLERPLACE_AREA)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_CNT_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_DAYS_FIRST_DRAWING)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_DAYS_FIRST_DUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_DAYS_LAST_DUE_1ST_VERSION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_DAYS_LAST_DUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_DAYS_TERMINATION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_AMT_ANNUITY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_AMT_APPLICATION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_AMT_CREDIT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_AMT_DOWN_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_AMT_GOODS_PRICE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_RATE_DOWN_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_RATE_INTEREST_PRIMARY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_RATE_INTEREST_PRIVILEGED)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_DAYS_DECISION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SELLERPLACE_AREA)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_CNT_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_DAYS_FIRST_DRAWING)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_DAYS_FIRST_DUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_DAYS_LAST_DUE_1ST_VERSION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_DAYS_LAST_DUE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_DAYS_TERMINATION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "COUNT(previous)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_NAME_CONTRACT_TYPE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_WEEKDAY_APPR_PROCESS_START)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_HOUR_APPR_PROCESS_START)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_FLAG_LAST_APPL_PER_CONTRACT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_NFLAG_LAST_APPL_IN_DAY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_NAME_CASH_LOAN_PURPOSE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_NAME_CONTRACT_STATUS)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_NAME_PAYMENT_TYPE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_CODE_REJECT_REASON)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_NAME_TYPE_SUITE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_NAME_CLIENT_TYPE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_NAME_GOODS_CATEGORY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_NAME_PORTFOLIO)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_NAME_PRODUCT_TYPE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_CHANNEL_TYPE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_NAME_SELLER_INDUSTRY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_NAME_YIELD_GROUP)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_PRODUCT_COMBINATION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_NFLAG_INSURED_ON_APPROVAL)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MODE(previous_NAME_CONTRACT_TYPE)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(previous_WEEKDAY_APPR_PROCESS_START)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(previous_HOUR_APPR_PROCESS_START)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(previous_FLAG_LAST_APPL_PER_CONTRACT)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(previous_NFLAG_LAST_APPL_IN_DAY)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(previous_NAME_CASH_LOAN_PURPOSE)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(previous_NAME_CONTRACT_STATUS)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(previous_NAME_PAYMENT_TYPE)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(previous_CODE_REJECT_REASON)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(previous_NAME_TYPE_SUITE)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(previous_NAME_CLIENT_TYPE)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(previous_NAME_GOODS_CATEGORY)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(previous_NAME_PORTFOLIO)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(previous_NAME_PRODUCT_TYPE)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(previous_CHANNEL_TYPE)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(previous_NAME_SELLER_INDUSTRY)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(previous_NAME_YIELD_GROUP)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(previous_PRODUCT_COMBINATION)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(previous_NFLAG_INSURED_ON_APPROVAL)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "SUM(cash_SK_ID_CURR)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(cash_MONTHS_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(cash_CNT_INSTALMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(cash_CNT_INSTALMENT_FUTURE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(cash_SK_DPD)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(cash_SK_DPD_DEF)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(cash_SK_ID_CURR)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(cash_MONTHS_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(cash_CNT_INSTALMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(cash_CNT_INSTALMENT_FUTURE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(cash_SK_DPD)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(cash_SK_DPD_DEF)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(cash_SK_ID_CURR)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(cash_MONTHS_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(cash_CNT_INSTALMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(cash_CNT_INSTALMENT_FUTURE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(cash_SK_DPD)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(cash_SK_DPD_DEF)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(cash_SK_ID_CURR)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(cash_MONTHS_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(cash_CNT_INSTALMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(cash_CNT_INSTALMENT_FUTURE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(cash_SK_DPD)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(cash_SK_DPD_DEF)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(cash_SK_ID_CURR)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(cash_MONTHS_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(cash_CNT_INSTALMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(cash_CNT_INSTALMENT_FUTURE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(cash_SK_DPD)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(cash_SK_DPD_DEF)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(cash_SK_ID_CURR)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(cash_MONTHS_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(cash_CNT_INSTALMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(cash_CNT_INSTALMENT_FUTURE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(cash_SK_DPD)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(cash_SK_DPD_DEF)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "COUNT(cash)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(cash_NAME_CONTRACT_STATUS)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MODE(cash_NAME_CONTRACT_STATUS)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "SUM(credit_SK_ID_CURR)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(credit_MONTHS_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(credit_AMT_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(credit_AMT_CREDIT_LIMIT_ACTUAL)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(credit_AMT_DRAWINGS_ATM_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(credit_AMT_DRAWINGS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(credit_AMT_DRAWINGS_OTHER_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(credit_AMT_DRAWINGS_POS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(credit_AMT_INST_MIN_REGULARITY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(credit_AMT_PAYMENT_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(credit_AMT_PAYMENT_TOTAL_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(credit_AMT_RECEIVABLE_PRINCIPAL)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(credit_AMT_RECIVABLE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(credit_AMT_TOTAL_RECEIVABLE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(credit_CNT_DRAWINGS_ATM_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(credit_CNT_DRAWINGS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(credit_CNT_DRAWINGS_OTHER_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(credit_CNT_DRAWINGS_POS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(credit_CNT_INSTALMENT_MATURE_CUM)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(credit_SK_DPD)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(credit_SK_DPD_DEF)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_SK_ID_CURR)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_MONTHS_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_AMT_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_AMT_CREDIT_LIMIT_ACTUAL)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_AMT_DRAWINGS_ATM_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_AMT_DRAWINGS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_AMT_DRAWINGS_OTHER_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_AMT_DRAWINGS_POS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_AMT_INST_MIN_REGULARITY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_AMT_PAYMENT_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_AMT_PAYMENT_TOTAL_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_AMT_RECEIVABLE_PRINCIPAL)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_AMT_RECIVABLE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_AMT_TOTAL_RECEIVABLE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_CNT_DRAWINGS_ATM_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_CNT_DRAWINGS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_CNT_DRAWINGS_OTHER_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_CNT_DRAWINGS_POS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_CNT_INSTALMENT_MATURE_CUM)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_SK_DPD)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(credit_SK_DPD_DEF)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_SK_ID_CURR)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_MONTHS_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_AMT_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_AMT_CREDIT_LIMIT_ACTUAL)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_AMT_DRAWINGS_ATM_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_AMT_DRAWINGS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_AMT_DRAWINGS_OTHER_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_AMT_DRAWINGS_POS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_AMT_INST_MIN_REGULARITY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_AMT_PAYMENT_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_AMT_PAYMENT_TOTAL_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_AMT_RECEIVABLE_PRINCIPAL)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_AMT_RECIVABLE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_AMT_TOTAL_RECEIVABLE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_CNT_DRAWINGS_ATM_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_CNT_DRAWINGS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_CNT_DRAWINGS_OTHER_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_CNT_DRAWINGS_POS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_CNT_INSTALMENT_MATURE_CUM)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_SK_DPD)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(credit_SK_DPD_DEF)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_SK_ID_CURR)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_MONTHS_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_AMT_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_AMT_CREDIT_LIMIT_ACTUAL)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_AMT_DRAWINGS_ATM_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_AMT_DRAWINGS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_AMT_DRAWINGS_OTHER_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_AMT_DRAWINGS_POS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_AMT_INST_MIN_REGULARITY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_AMT_PAYMENT_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_AMT_PAYMENT_TOTAL_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_AMT_RECEIVABLE_PRINCIPAL)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_AMT_RECIVABLE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_AMT_TOTAL_RECEIVABLE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_CNT_DRAWINGS_ATM_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_CNT_DRAWINGS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_CNT_DRAWINGS_OTHER_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_CNT_DRAWINGS_POS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_CNT_INSTALMENT_MATURE_CUM)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_SK_DPD)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(credit_SK_DPD_DEF)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_SK_ID_CURR)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_MONTHS_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_AMT_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_AMT_CREDIT_LIMIT_ACTUAL)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_AMT_DRAWINGS_ATM_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_AMT_DRAWINGS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_AMT_DRAWINGS_OTHER_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_AMT_DRAWINGS_POS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_AMT_INST_MIN_REGULARITY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_AMT_PAYMENT_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_AMT_PAYMENT_TOTAL_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_AMT_RECEIVABLE_PRINCIPAL)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_AMT_RECIVABLE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_AMT_TOTAL_RECEIVABLE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_CNT_DRAWINGS_ATM_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_CNT_DRAWINGS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_CNT_DRAWINGS_OTHER_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_CNT_DRAWINGS_POS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_CNT_INSTALMENT_MATURE_CUM)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_SK_DPD)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(credit_SK_DPD_DEF)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_SK_ID_CURR)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_MONTHS_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_AMT_BALANCE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_AMT_CREDIT_LIMIT_ACTUAL)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_AMT_DRAWINGS_ATM_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_AMT_DRAWINGS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_AMT_DRAWINGS_OTHER_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_AMT_DRAWINGS_POS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_AMT_INST_MIN_REGULARITY)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_AMT_PAYMENT_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_AMT_PAYMENT_TOTAL_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_AMT_RECEIVABLE_PRINCIPAL)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_AMT_RECIVABLE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_AMT_TOTAL_RECEIVABLE)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_CNT_DRAWINGS_ATM_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_CNT_DRAWINGS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_CNT_DRAWINGS_OTHER_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_CNT_DRAWINGS_POS_CURRENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_CNT_INSTALMENT_MATURE_CUM)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_SK_DPD)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(credit_SK_DPD_DEF)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "COUNT(credit)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(credit_NAME_CONTRACT_STATUS)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MODE(credit_NAME_CONTRACT_STATUS)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "SUM(installments_SK_ID_CURR)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(installments_NUM_INSTALMENT_NUMBER)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(installments_DAYS_INSTALMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(installments_DAYS_ENTRY_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(installments_AMT_INSTALMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(installments_AMT_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(installments_SK_ID_CURR)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(installments_NUM_INSTALMENT_NUMBER)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(installments_DAYS_INSTALMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(installments_DAYS_ENTRY_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(installments_AMT_INSTALMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(installments_AMT_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(installments_SK_ID_CURR)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(installments_NUM_INSTALMENT_NUMBER)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(installments_DAYS_INSTALMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(installments_DAYS_ENTRY_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(installments_AMT_INSTALMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(installments_AMT_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(installments_SK_ID_CURR)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(installments_NUM_INSTALMENT_NUMBER)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(installments_DAYS_INSTALMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(installments_DAYS_ENTRY_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(installments_AMT_INSTALMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(installments_AMT_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(installments_SK_ID_CURR)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(installments_NUM_INSTALMENT_NUMBER)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(installments_DAYS_INSTALMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(installments_DAYS_ENTRY_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(installments_AMT_INSTALMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(installments_AMT_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(installments_SK_ID_CURR)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(installments_NUM_INSTALMENT_NUMBER)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(installments_DAYS_INSTALMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(installments_DAYS_ENTRY_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(installments_AMT_INSTALMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(installments_AMT_PAYMENT)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "COUNT(installments)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(installments_NUM_INSTALMENT_VERSION)",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MODE(installments_NUM_INSTALMENT_VERSION)",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "SUM(bureau_STD(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(bureau_MAX(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(bureau_SKEW(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(bureau_MIN(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(bureau_MEAN(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(bureau_NUM_UNIQUE(bureau_balance_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(bureau_SUM(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(bureau_MAX(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(bureau_SKEW(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(bureau_MIN(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(bureau_MEAN(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(bureau_COUNT(bureau_balance))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(bureau_NUM_UNIQUE(bureau_balance_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(bureau_SUM(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(bureau_STD(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(bureau_SKEW(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(bureau_MIN(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(bureau_MEAN(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(bureau_COUNT(bureau_balance))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(bureau_NUM_UNIQUE(bureau_balance_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(bureau_SUM(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(bureau_STD(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(bureau_MAX(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(bureau_MIN(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(bureau_MEAN(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(bureau_COUNT(bureau_balance))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(bureau_NUM_UNIQUE(bureau_balance_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(bureau_SUM(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(bureau_STD(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(bureau_MAX(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(bureau_SKEW(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(bureau_MEAN(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(bureau_COUNT(bureau_balance))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(bureau_NUM_UNIQUE(bureau_balance_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_SUM(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_STD(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_MAX(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_SKEW(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_MIN(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_MEAN(bureau_balance_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_COUNT(bureau_balance))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(bureau_NUM_UNIQUE(bureau_balance_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(bureau_MODE(bureau_balance_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MODE(bureau_MODE(bureau_balance_STATUS))",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "SUM(previous_STD(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_NUM_UNIQUE(cash_NAME_CONTRACT_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_NUM_UNIQUE(credit_NAME_CONTRACT_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_STD(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MAX(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_SKEW(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MIN(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_MEAN(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SUM(previous_NUM_UNIQUE(installments_NUM_INSTALMENT_VERSION))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_COUNT(cash))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_NUM_UNIQUE(cash_NAME_CONTRACT_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_COUNT(credit))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_NUM_UNIQUE(credit_NAME_CONTRACT_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SUM(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MAX(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_SKEW(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MIN(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_MEAN(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_COUNT(installments))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "STD(previous_NUM_UNIQUE(installments_NUM_INSTALMENT_VERSION))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_COUNT(cash))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_NUM_UNIQUE(cash_NAME_CONTRACT_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_COUNT(credit))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_NUM_UNIQUE(credit_NAME_CONTRACT_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SUM(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_STD(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_SKEW(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MIN(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_MEAN(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_COUNT(installments))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MAX(previous_NUM_UNIQUE(installments_NUM_INSTALMENT_VERSION))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_COUNT(cash))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_NUM_UNIQUE(cash_NAME_CONTRACT_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_COUNT(credit))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_NUM_UNIQUE(credit_NAME_CONTRACT_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_SUM(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_STD(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MAX(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MIN(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_MEAN(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_COUNT(installments))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "SKEW(previous_NUM_UNIQUE(installments_NUM_INSTALMENT_VERSION))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_COUNT(cash))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_NUM_UNIQUE(cash_NAME_CONTRACT_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_COUNT(credit))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_NUM_UNIQUE(credit_NAME_CONTRACT_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SUM(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_STD(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MAX(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_SKEW(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_MEAN(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_COUNT(installments))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MIN(previous_NUM_UNIQUE(installments_NUM_INSTALMENT_VERSION))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(cash_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(cash_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(cash_CNT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(cash_CNT_INSTALMENT_FUTURE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(cash_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(cash_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_COUNT(cash))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_NUM_UNIQUE(cash_NAME_CONTRACT_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_MONTHS_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_AMT_BALANCE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_AMT_CREDIT_LIMIT_ACTUAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_AMT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_AMT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_AMT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_AMT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_AMT_INST_MIN_REGULARITY))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_AMT_PAYMENT_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_AMT_PAYMENT_TOTAL_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_AMT_RECEIVABLE_PRINCIPAL))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_AMT_RECIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_AMT_TOTAL_RECEIVABLE))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_CNT_DRAWINGS_ATM_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_CNT_DRAWINGS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_CNT_DRAWINGS_OTHER_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_CNT_DRAWINGS_POS_CURRENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_CNT_INSTALMENT_MATURE_CUM))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_SK_DPD))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(credit_SK_DPD_DEF))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_COUNT(credit))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_NUM_UNIQUE(credit_NAME_CONTRACT_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SUM(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_STD(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MAX(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_SKEW(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MIN(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(installments_SK_ID_CURR))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(installments_NUM_INSTALMENT_NUMBER))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(installments_DAYS_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(installments_DAYS_ENTRY_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(installments_AMT_INSTALMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_MEAN(installments_AMT_PAYMENT))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_COUNT(installments))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MEAN(previous_NUM_UNIQUE(installments_NUM_INSTALMENT_VERSION))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_MODE(cash_NAME_CONTRACT_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_MODE(credit_NAME_CONTRACT_STATUS))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "NUM_UNIQUE(previous_MODE(installments_NUM_INSTALMENT_VERSION))",
+      "type": "SCALAR"
+    },
+    {
+      "name": "MODE(previous_MODE(cash_NAME_CONTRACT_STATUS))",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(previous_MODE(credit_NAME_CONTRACT_STATUS))",
+      "type": "CATEGORICAL"
+    },
+    {
+      "name": "MODE(previous_MODE(installments_NUM_INSTALMENT_VERSION))",
+      "type": "CATEGORICAL"
+    }
+  ]
+}

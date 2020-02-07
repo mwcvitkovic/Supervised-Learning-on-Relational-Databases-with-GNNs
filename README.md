@@ -1,6 +1,6 @@
 # Supervised Learning on Relational Databases with Graph Neural Networks
 
-This is code to reproduce the results in the paper Supervised Learning on Relational Databases with Graph Neural Networks.
+This is code to reproduce the results in the paper [Supervised Learning on Relational Databases with Graph Neural Networks](https://arxiv.org/abs/2002.02046).
 
 ## Install dependencies
 

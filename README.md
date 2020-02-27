@@ -47,7 +47,7 @@ So you either need to follow the instructions below and build them yourself, or 
 
 7) Run `python -m data.<db_name>.build_dataset_from_database` from the root directory of this repo.
 
-8) Run `python -m data.<db_name>.build_db_info` from the root directory of this repo.
+8) (optional) Run `python -m data.<db_name>.build_db_info` from the root directory of this repo.
 
 9) (optional) to create the tabular and DFS datasets used in the experiments, run `python -m data.<db_name>.build_DFS_features` from the root directory of this repo.  Then run `python -m data.<db_name>.build_tabular_datasets` from the root directory of this repo.
 
